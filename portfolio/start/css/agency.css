@@ -743,7 +743,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   max-width: 100%;
   height:auto;
 
-
+  }
 
 /**** additional CSS***/
 
@@ -751,11 +751,57 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color:black;
 }
 
-.img-fluid-custom{
-  max-width: 60%;
-  height:auto;
-}
 
 .description{
   text-align:start;
+}
+
+.custom-icon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-icon-master{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+
+/*figma*/
+.gg-figma {
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   width: 14px;
+   height: 20px;
+   transform: scale(var(--ggs,1));
+   background:
+   linear-gradient(
+      to left,
+      currentColor 3px,
+      transparent 0
+   ) no-repeat 3px 7px/3px 6px,
+   linear-gradient(
+      to left,
+      currentColor 3px,
+      transparent 0
+   ) no-repeat 3px 14px/3px 3px
+}
+.gg-figma::after,
+.gg-figma::before {
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   width: 13px;
+   height: 6px;
+   background: currentColor;
+   border-radius: 22px
+}
+.gg-figma::after {
+   width: 6px;
+   top: 7px;
+   box-shadow: 7px 0 0,0 7px 0
 }
