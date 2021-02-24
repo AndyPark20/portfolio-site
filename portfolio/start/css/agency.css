@@ -118,7 +118,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #384244;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -359,8 +359,8 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 10px;
+  right: 1px;
   width: 75px;
   height: 75px;
   cursor: pointer;
@@ -375,7 +375,7 @@ header.masthead .intro-text .intro-heading {
   /* Safari and Chrome */
   z-index: 1051;
   width: 1px;
-  height: 75px;
+  height: 45px;
   margin-left: 35px;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -387,7 +387,7 @@ header.masthead .intro-text .intro-heading {
   /* Safari and Chrome */
   z-index: 1052;
   width: 1px;
-  height: 75px;
+  height: 45px;
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -744,6 +744,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   #portfolio .portfolio-item .portfolio-caption p {
     font-size:12px;
   }
+  .portfolio-modal .modal-content p.item-intro{
+    font-size:12px;
+  }
 }
 
 @media (min-width:1001px){
@@ -904,4 +907,15 @@ section h3.contact-subheading {
   .contact-style-heading {
     color:#9d6937;
     font-size:1.0rem;
+  }
+
+  .contact-style {
+    color:#fffef3;
+    font-weight:400;
+  }
+
+  .contact-style:hover {
+    color:#9d6937;
+    text-decoration:none;
+    transition:.3s ease;
   }
